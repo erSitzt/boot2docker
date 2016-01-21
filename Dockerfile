@@ -1,5 +1,8 @@
 FROM debian:jessie
 
+ARG http_proxy=http://proxy.expert.de:8080
+ARG https_proxy=http://proxy.expert.de:8080
+
 RUN apt-get update && apt-get -y install  unzip \
                         xz-utils \
                         curl \
@@ -79,6 +82,8 @@ ENV TCZ_DEPS        iptables \
                     udev-lib udev-extra \
                     liblvm2 \
                     glibc_apps \
+		    cifs-utils \
+		    samba-libs \
                     parted
 
 # Make the ROOTFS
