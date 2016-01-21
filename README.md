@@ -9,6 +9,7 @@ small ~24MB download and boots in ~5s (YMMV).
 * Kernel 4.1.15 with AUFS, Docker v1.9.1 - using libcontainer
 * Container persistence via disk automount on `/var/lib/docker`
 * SSH keys persistence via disk automount
+* getent / cifs support for Vagrant
 
 > **Note:** Boot2Docker uses port **2376**, the [registered IANA Docker SSL
 > port](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker)
